@@ -1,0 +1,435 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-17T05:53:20.395Z",
+        "before": [
+          {
+            "result": {
+              "duration": 29514589700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 758291100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.closeBrowsers()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 63186000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on HRMLogin page",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.loginTest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5335101800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.HomeTest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27675500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to login sucessfully and new page open",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.verify()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ValidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-17T05:53:56.217Z",
+        "before": [
+          {
+            "result": {
+              "duration": 28551181500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 711630200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.closeBrowsers()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31042800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on HRMLogin page",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.loginTest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 918340100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters username as \"Admin1\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin1\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.HomeTest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30216800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should not be able to login sucessfully and new page should not open",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.verifyinvalidcredentials()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-17T05:54:26.478Z",
+        "before": [
+          {
+            "result": {
+              "duration": 42755509100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login and Logout successfully",
+        "description": "",
+        "id": "login-to-hrm-application;login-and-logout-successfully",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d92.0.4515.159)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027M5-L-CNM8103\u0027, ip: \u0027192.168.75.118\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\DIPTEE~1.NAN\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7cb356d585af7f339fe857b39b3ffe16\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)\r\n\tat com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.closeBrowsers(LoginPageDefinitions.java:103)\r\n",
+              "duration": 4117031100,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.closeBrowsers()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60837100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is on HRMLogin page",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.loginTest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4890982200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.HomeTest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55850100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be able to login sucessfully and new page open",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.verify()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 225395900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should successfully able to logout",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.logout_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using id\u003dlogInPanelHeading\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027M5-L-CNM8103\u0027, ip: \u0027192.168.75.118\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.11\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.getText(Unknown Source)\r\n\tat com.cucumber.pageobjectmodel.definitions.LogoutPage.getverifyloginpanel(LogoutPage.java:37)\r\n\tat com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.VerifyLoginScreenAfterLogout(LoginPageDefinitions.java:96)\r\n\tat ✽.User should be able to redirect to login screen(file:///C:/Users/diptee.nanda/eclipse-workspace/Automation/src/test/resources/features/HRMLoginPage.feature:23)\r\n",
+              "duration": 27634316300,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "User should be able to redirect to login screen",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.VerifyLoginScreenAfterLogout()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-17T05:55:46.280Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome\u003d92.0.4515.159)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027M5-L-CNM8103\u0027, ip: \u0027192.168.75.118\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\DIPTEE~1.NAN\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1bac7804978a617bc456a1d35d37ed51\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.setup(LoginPageDefinitions.java:48)\r\n",
+              "duration": 4699934700,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Login and Logout and Login again",
+        "description": "",
+        "id": "login-to-hrm-application;login-and-logout-and-login-again",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d92.0.4515.159)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027M5-L-CNM8103\u0027, ip: \u0027192.168.75.118\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\DIPTEE~1.NAN\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1bac7804978a617bc456a1d35d37ed51\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)\r\n\tat com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.closeBrowsers(LoginPageDefinitions.java:103)\r\n",
+              "duration": 238512100,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.closeBrowsers()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "User is on HRMLogin page",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.loginTest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.HomeTest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2991400,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User should be able to login sucessfully and new page open",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.verify()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User should successfully able to logout",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.logout_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 996300,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User should be able to redirect to login screen",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.VerifyLoginScreenAfterLogout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.HomeTest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "User should be able to login sucessfully and new page open",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.verify()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User should successfully able to logout",
+            "match": {
+              "location": "com.cucumber.pageobjectmodel.stepdefinations.LoginPageDefinitions.logout_user()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to HRM Application",
+    "description": "",
+    "id": "login-to-hrm-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HRMLoginPage.feature",
+    "tags": []
+  }
+]

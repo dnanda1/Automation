@@ -1,0 +1,648 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-27T09:59:11.438Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1606400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "In order to verify login to facebook",
+        "description": "",
+        "id": "login;in-order-to-verify-login-to-facebook;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 120000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36823500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to facebook website",
+            "match": {
+              "location": "LoginStep.user_navigatesto_facebook_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 661700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user validates the homepage title",
+            "match": {
+              "location": "LoginStep.user_validates_the_homepage_title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 691600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user entered \"valid\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_username(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 496300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user entered \"valid\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1731500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user selected the Age Group",
+            "match": {
+              "location": "LoginStep.user_selected_the_Age_Group(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Age",
+                  "Location"
+                ]
+              },
+              {
+                "cells": [
+                  "above 18",
+                  "India"
+                ]
+              },
+              {
+                "cells": [
+                  "below 18",
+                  "USA"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 347700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user \"should\" sucessfully logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "should",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStep.user_shouldbe_sucessfully_logged_in(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-27T09:59:11.524Z",
+        "before": [
+          {
+            "result": {
+              "duration": 145300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "In order to verify login to facebook",
+        "description": "",
+        "id": "login;in-order-to-verify-login-to-facebook;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 120100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 271000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to facebook website",
+            "match": {
+              "location": "LoginStep.user_navigatesto_facebook_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 328000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user validates the homepage title",
+            "match": {
+              "location": "LoginStep.user_validates_the_homepage_title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 299200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user entered \"invalid\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_username(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 325100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user entered \"invalid\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1085000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user selected the Age Group",
+            "match": {
+              "location": "LoginStep.user_selected_the_Age_Group(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Age",
+                  "Location"
+                ]
+              },
+              {
+                "cells": [
+                  "above 18",
+                  "India"
+                ]
+              },
+              {
+                "cells": [
+                  "below 18",
+                  "USA"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 337800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user \"shouldnot\" sucessfully logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shouldnot",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStep.user_shouldbe_sucessfully_logged_in(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "In order to perform sucessful login\nAs a user\nI want to enter correct username and password",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 314500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to facebook website",
+            "match": {
+              "location": "LoginStep.user_navigatesto_facebook_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user validates the homepage title",
+            "match": {
+              "location": "LoginStep.user_validates_the_homepage_title()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-27T09:59:11.530Z",
+        "before": [
+          {
+            "result": {
+              "duration": 158000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 112300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.prodsetup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "In order to verify login to facebook",
+        "description": "",
+        "id": "login-to-production;in-order-to-verify-login-to-facebook",
+        "after": [
+          {
+            "result": {
+              "duration": 1049400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 167700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.prodteardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 480900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user entered \"valid\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_username(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 257000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user entered \"valid\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 279900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user validates the capcha",
+            "match": {
+              "location": "ProdLoginStep.user_validates_the_capcha()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 304300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user \"shouldbe\" sucessfully logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shouldbe",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStep.user_shouldbe_sucessfully_logged_in(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@prod"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 280200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to facebook website",
+            "match": {
+              "location": "LoginStep.user_navigatesto_facebook_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 322500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user validates the homepage title",
+            "match": {
+              "location": "LoginStep.user_validates_the_homepage_title()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-27T09:59:11.540Z",
+        "before": [
+          {
+            "result": {
+              "duration": 136200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 106200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.prodsetup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "In order to verify login to facebook",
+        "description": "",
+        "id": "login-to-production;in-order-to-verify-login-to-facebook",
+        "after": [
+          {
+            "result": {
+              "duration": 107900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 107100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStep.prodteardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 552000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user entered \"invalid\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_username(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 267700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user entered \"invalid\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStep.user_entered_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user validates the capcha",
+            "match": {
+              "location": "ProdLoginStep.user_validates_the_capcha()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user \"shouldnot\" sucessfully logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shouldnot",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStep.user_shouldbe_sucessfully_logged_in(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@prod"
+          }
+        ]
+      }
+    ],
+    "name": "Login To Production",
+    "description": "  In order to perform sucessful login\n  As a user\n  I want to enter correct username and password",
+    "id": "login-to-production",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/prodlogin.feature",
+    "tags": [
+      {
+        "name": "@prod",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
